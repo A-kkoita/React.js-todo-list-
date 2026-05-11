@@ -1,0 +1,178 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: flex-start;   /* push to top */
+  padding-top: 60px;
+
+  /* Light beautiful gradient background */
+  background: linear-gradient(135deg, #eef2ff, #fdf4ff, #ecfeff);
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 750px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 24px;
+  color: #1f2937;
+  margin-bottom: 5px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+/* Input */
+.input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #a78bfa;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.2);
+}
+
+/* Button (purple as you wanted) */
+.btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #a78bfa;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #8b5cf6;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Task list (ul) */
+.task-list {
+  margin-top: -520px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+
+/* Each task item */
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: #f9fafb;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+
+  width: 750px;
+}
+
+/* Checkbox */
+.checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Task text */
+.task-text {
+  flex: 1;
+  font-size: 14px;
+  color: #374151;
+  text-align: left;
+}
+
+/* Completed style */
+.task-text.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* Delete button (light style matching your theme) */
+.delete-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: #fee2e2;
+  color: #dc2626;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #fecaca;
+}
+
+.update-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: skyblue;
+  color: navy;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s;
+
+}
+.update-btn:hover {
+  background: #fecaca;
+}
+
+
+.save-btn{
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: greenyellow;
+  color: navy;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s;
+
+}
+
