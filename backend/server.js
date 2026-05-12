@@ -3,6 +3,7 @@ import cors from 'cors';
 import session from 'express-session';
 import MongoStore from 'connect-mongo'
 import taskrouter from './routes/tasks.js';
+import authrouter from './routes/auth.js';
 import { connectDB } from './config/db.js';
 
 
@@ -22,8 +23,10 @@ app.use(
     cookie:{httpOnly: true, maxAge: 1000 * 60 * 60 *24}
   })
 )
-
+//routes
 app.use('/api/tasks', taskrouter);
+app.use('/api/auth', authrouter);
+
 
 connectDB()
   .then(() => {

@@ -102,3 +102,20 @@ export async function login(req, res) {
     });
   }
 }
+
+//logout 
+export async function logout(req,res) {
+  req.session.destroy()
+  res.json({message:"Logged out  !!"})
+} 
+
+//check if user a user has an active session 
+
+export async function getMe(req, res){
+  if(!req.session.userId) {
+      return res.json(null)
+  }
+  const user  = await UserActivation.findById(req.session.userId).select('-password');
+  res.json(user);
+  
+}
